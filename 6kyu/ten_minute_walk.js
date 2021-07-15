@@ -2,3 +2,28 @@
 
 //     Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
 
+function isValidWalk(walk) {
+    //insert brilliant code here
+    var ns = 0;
+    var ew = 0;
+
+    if (walk.length === 10) {
+        for (var i of walk) {
+
+            if (i === "n") ns += 1;
+            if (i === "s") ns -= 1;
+            if (i === "e") ew += 1;
+            if (i === "w") ew -= 1;
+        }
+
+    } else {
+        return false;
+    }
+    return ns === 0 && ew === 0;
+}
+
+
+Test.expect(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), 'should return true');
+Test.expect(!isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), 'should return false');
+Test.expect(!isValidWalk(['w']), 'should return false');
+Test.expect(!isValidWalk(['n','n','n','s','n','s','n','s','n','s']), 'should return false');
