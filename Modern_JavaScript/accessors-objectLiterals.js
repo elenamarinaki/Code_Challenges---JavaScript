@@ -69,3 +69,22 @@ user.userName = 'Betty';
 user.names;
 
 // Goal: ['Amir', 'Betty'];
+
+// ----------------------- EXAMPLES
+function createUser(userName) {
+  return {
+    names: [userName],
+    get userName() {
+      return this.names[this.names.length - 1];
+    },
+    set userName(userName) {
+      this.names.push(userName);
+    },
+  };
+}
+
+const user = createUser('Amir');
+user.userName = 'Betty';
+user.names;
+
+// Result: ['Amir', 'Betty'];
