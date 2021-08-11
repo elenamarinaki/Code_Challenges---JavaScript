@@ -8,3 +8,12 @@ function longSum(x, y) {
 [longSum(1, 2), longSum(10, 20)];
 
 // Goal: ['1 + 2 = 3', '10 + 20 = 30'];
+
+// --------------------------- EXAMPLES
+const name = 'Amir';
+const email = ['Hi, ' + name, '', "We've updated our privacy policy!"].join(
+  '\n'
+);
+email === "Hi, Amir\n\nWe've updated our privacy policy!";
+
+// Result: true;
