@@ -27,3 +27,13 @@ user.userName = 'Betty';
 user.realName;
 
 // Result: 'Betty';
+
+const user = {
+  realName: 'Amir',
+  set userName(newName) {
+    this.realName = newName;
+  },
+};
+user.userName;
+
+// Result: undefined;
