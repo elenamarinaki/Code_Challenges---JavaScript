@@ -25,3 +25,15 @@ function addMany(toAdd, ...numbers) {
 addMany(2, 1, 7.7, 1000);
 
 // Result: [3, 9.7, 1002];
+
+
+function addMany(...numbers, toAdd) {
+  const result = [];
+  for (const n of numbers) {
+    result.push(n + toAdd);
+  }
+  return result;
+}
+addMany(1, 7.7, 1000, 2);
+
+// Result: SyntaxError: Rest element must be last element.
