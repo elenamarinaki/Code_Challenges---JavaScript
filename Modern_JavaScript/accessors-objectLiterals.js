@@ -88,3 +88,12 @@ user.userName = 'Betty';
 user.names;
 
 // Result: ['Amir', 'Betty'];
+
+const user = {
+  userName: function () {
+    return 'Amir';
+  },
+};
+typeof user.userName;
+
+// Result: 'function';
