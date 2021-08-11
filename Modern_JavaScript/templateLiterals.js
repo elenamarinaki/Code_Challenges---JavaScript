@@ -17,3 +17,13 @@ const email = ['Hi, ' + name, '', "We've updated our privacy policy!"].join(
 email === "Hi, Amir\n\nWe've updated our privacy policy!";
 
 // Result: true;
+
+const name = 'Amir';
+const email = `
+  Hi, ${name},
+  
+  We've updated our privacy policy!
+`;
+email === "\n  Hi, Amir,\n  \n  We've updated our privacy policy!\n";
+
+// Result: true;
