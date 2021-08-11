@@ -51,3 +51,21 @@ user.userName = 'Betty';
 [user.realName, user.userName];
 
 // Result: ['Betty', 'Betty'];
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+
+// Add a userName setter to this object. It should use push to append the userName to the names list.
+
+const user = {
+  names: ['Amir'],
+  set userName(newName) {
+    this.names.push(newName);
+  },
+};
+
+// ----------------------- TESTING
+user.userName = 'Betty';
+user.names;
+
+// Goal: ['Amir', 'Betty'];
