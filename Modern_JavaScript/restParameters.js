@@ -37,3 +37,11 @@ function addMany(...numbers, toAdd) {
 addMany(1, 7.7, 1000, 2);
 
 // Result: SyntaxError: Rest element must be last element.
+
+function add(x, y) {
+  return x + y;
+}
+const numbers = [1, 2];
+add(...numbers);
+
+// Result: 3
