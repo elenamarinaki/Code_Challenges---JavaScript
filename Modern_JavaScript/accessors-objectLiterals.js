@@ -15,3 +15,15 @@ const name2 = user.userName;
 [name1, name2];
 
 // Goal: ['Amir', 'Betty'];
+
+// ----------------------- EXAMPLES
+const user = {
+  realName: 'Amir',
+  set userName(newName) {
+    this.realName = newName;
+  },
+};
+user.userName = 'Betty';
+user.realName;
+
+// Result: 'Betty';
