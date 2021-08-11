@@ -37,3 +37,17 @@ const user = {
 user.userName;
 
 // Result: undefined;
+
+const user = {
+  realName: 'Amir',
+  get userName() {
+    return this.realName;
+  },
+  set userName(newName) {
+    this.realName = newName;
+  },
+};
+user.userName = 'Betty';
+[user.realName, user.userName];
+
+// Result: ['Betty', 'Betty'];
