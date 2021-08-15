@@ -21,3 +21,16 @@ function fizzbuzz2(min, max) {
     console.log(output);
   }
 }
+
+// not working ?
+function* fizzbuzz3() {
+  for (let i = 1; i <= 5; i++) {
+    let output = '';
+    if (i % 3 === 0) output += 'Fizz';
+    if (i % 5 === 0) output += 'Buzz';
+    if (output === '') output = i;
+    yield output;
+  }
+}
+
+const [y, z, ,d, g, e] = fizzbuzz3();
