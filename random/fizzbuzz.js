@@ -22,9 +22,9 @@ function fizzbuzz2(min, max) {
   }
 }
 
-// not working ?
+// not working
 function* fizzbuzz3() {
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 100; i++) {
     let output = '';
     if (i % 3 === 0) output += 'Fizz';
     if (i % 5 === 0) output += 'Buzz';
@@ -33,4 +33,6 @@ function* fizzbuzz3() {
   }
 }
 
-const [y, z, ,d, g, e] = fizzbuzz3();
+const [y, z, d, g, e, t, ed, gf, th, er, ty, fg, yh, rtg, scv, dfg, tyu] =
+  fizzbuzz3();
+  [y, z, d, g, e, t, ed, gf, th, er, ty, fg, yh, rtg, scv, dfg,tyu];
